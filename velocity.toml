@@ -1,0 +1,34 @@
+config-version = "2"
+bind = "0.0.0.0:25565"
+motd = ""
+show-max-players = 0
+online-mode = false
+player-info-forwarding-mode = "NONE"
+announce-forge = false
+force-key-authentication = false
+forwarding-secret-file = "forwarding-secret"
+
+[servers]
+fauxserver = "127.0.0.1:65535"
+
+try = ["fauxserver"]
+
+[forced-hosts]
+
+[advanced]
+compression-threshold = 256
+compression-level = -1
+login-ratelimit = 0
+connection-timeout = 5000
+read-timeout = 30000
+proxy-protocol = false
+tcp-fast-open = true
+announce-proxy-commands = false
+
+[query]
+enabled = false
+
+[metrics]
+enabled = false
+id = "00000000-0000-0000-0000-000000000000"
+log-failure = false
